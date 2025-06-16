@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólió – Csiszár Martin</title>
+  <style>
+    body { background: #121212; color: #eee; font-family: sans-serif; margin: 0; }
+    header, footer { background: #1f1f1f; padding: 20px; text-align: center; }
+    a { color: #fff; text-decoration: none; margin: 10px; }
+    .project { background: #1e1e1e; padding: 20px; margin: 20px; border-radius: 8px; }
+    .project h3 { margin-top: 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfólió</h1>
+    <nav>
+      <a href="index.html">Főoldal</a>
+      <a href="portfolio.html">Portfólió</a>
+      <a href="webshop.html">Webshop</a>
+      <a href="kapcsolat.html">Kapcsolat</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project">
+      <h3>DMG MORI CTX Beta 800</h3>
+      <p>Siemens vezérlős esztergagéphez készített CNC programozás nagy pontossággal és optimalizálással.</p>
+    </section>
+    <section class="project">
+      <h3>Fanuc 0i-MF 3 tengelyes marógép</h3>
+      <p>Postprocesszor testreszabás és gyártási ciklusok fejlesztése.</p>
+    </section>
+    <!-- További projektek ide jöhetnek -->
+  </main>
+
+  <footer>
+    &copy; 2025 Csiszár Martin – CNC Programozó
+  </footer>
+</body>
+</html>
