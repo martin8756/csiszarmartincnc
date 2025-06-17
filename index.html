@@ -10,70 +10,92 @@
       font-family: Arial, sans-serif;
       background-color: #121212;
       color: #eee;
-    }
-    header {
-      background: #1f1f1f;
-      padding: 15px 20px;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
-    header h1 {
-      margin: 0;
+
+    /* Oldalsó menü */
+    .sidebar {
+      width: 200px;
+      background-color: #1f1f1f;
+      height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .sidebar h1 {
       font-size: 1.4rem;
+      margin-bottom: 30px;
     }
-    nav a {
+
+    .sidebar nav a {
+      display: block;
       color: #eee;
       text-decoration: none;
-      margin-left: 15px;
+      margin-bottom: 15px;
+      padding: 8px;
+      border-radius: 4px;
     }
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
+
+    .sidebar nav a:hover {
+      background-color: #333;
     }
+
+    /* Tartalom */
+    .content {
+      margin-left: 200px;
+      padding: 40px 20px;
+      flex: 1;
+    }
+
     .hero h2 {
       font-size: 2rem;
       margin-bottom: 10px;
     }
-    .section {
-      text-align: center;
-      padding: 30px 20px;
-    }
+
     footer {
-      background: #1f1f1f;
-      text-align: center;
-      padding: 20px;
+      margin-top: 40px;
       font-size: 0.9rem;
+      text-align: center;
+      color: #999;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>CsisziCut</h1>
+
+  <!-- Oldalsáv -->
+  <div class="sidebar">
+    <h1>csiszicut</h1>
     <nav>
       <a href="index.html">Főoldal</a>
       <a href="portfolio.html">Portfólió</a>
-      <a href="#">Webshop</a>
-      <a href="#">Kapcsolat</a>
+      <a href="webshop.html">Webshop</a>
+      <a href="kapcsolat.html">Kapcsolat</a>
     </nav>
-  </header>
+  </div>
 
-  <section class="hero">
-    <h2>Szia! Üdvözöllek az CNC-sek Világában!</h2>
-    <p>20 éves CNC programozó. Precíz, tapasztalt és modern gondolkodású.</p>
-  </section>
+  <!-- Tartalom -->
+  <div class="content">
+    <section class="hero">
+      <h2>Szia! Csiszár Martin vagyok</h2>
+      <p>20 éves CNC programozó. Precíz, tapasztalt és modern gondolkodású.</p>
+    </section>
 
-  <section class="section">
-    <h3>Szolgáltatások</h3>
-    <ul>
-      <li>CNC programozás – Fanuc, Siemens vezérlők</li>
-      <li>Szerszám- és ciklusoptimalizálás</li>
-      <li>Mérő program készítés</li>
-    </ul>
-  </section>
+    <section>
+      <h3>Szolgáltatások</h3>
+      <ul>
+        <li>CNC programozás – Fanuc, Siemens vezérlők</li>
+        <li>Szerszám- és ciklusoptimalizálás</li>
+        <li>Postprocesszor testreszabás</li>
+      </ul>
+    </section>
 
-  <footer>
-    &copy; 2025 Csiszár Martin – CNC Programozó
-  </footer>
+    <footer>
+      &copy; 2025 Csiszár Martin – CNC Programozó
+    </footer>
+  </div>
+
 </body>
 </html>
